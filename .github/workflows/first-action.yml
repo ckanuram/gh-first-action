@@ -1,0 +1,10 @@
+name: First Workflow
+on:  workflow_dispatch #events that should trigger this workflow to run
+jobs: 
+  first-job:
+    runs-on: ubuntu-latest #runners where the job should run(execution environment)
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - Bye!"
